@@ -1,0 +1,32 @@
+server:
+   port: 8091
+   servlet:
+    context-path: /api/edimovie
+   error:
+    include-message: always
+    include-exception: true
+    include-binding-errors: always
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+  api-docs:
+    path: /v3/api-docs
+
+spring:
+  application:
+    name: edimovie-files-service
+  data:
+    mongodb: 
+      uri: mongodb://admin:admin@localhost:27017/files_db
+  jpa:
+    hibernate:
+      ddl-auto: update # update create tables from entities
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
