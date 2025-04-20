@@ -7,7 +7,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.3.6</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>es.uah</groupId>
 	<artifactId>EdiMovie-FilesService</artifactId>
@@ -19,7 +19,7 @@
 		<java.version>21</java.version>
 		<org.springdoc.version>2.6.0</org.springdoc.version>
 		<org.projectlombok.version>1.18.34</org.projectlombok.version>
-		<org.mapstruct.version>1.6.2</org.mapstruct.version>
+		<org.mapstruct.version>1.6.3</org.mapstruct.version>
 	</properties>
 
 	<dependencies>
